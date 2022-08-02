@@ -48,11 +48,7 @@ blocks:
   id: variable
   parameters:
     comment: ''
-<<<<<<< HEAD
     value: '929637500'
-=======
-    value: '931862500'
->>>>>>> wasp-3.8
   states:
     bus_sink: false
     bus_source: false
@@ -132,11 +128,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-<<<<<<< HEAD
     coordinate: [405, 117]
-=======
-    coordinate: [504, 284.0]
->>>>>>> wasp-3.8
     rotation: 0
     state: enabled
 - name: capcode
@@ -153,11 +145,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-<<<<<<< HEAD
     coordinate: [200, 68]
-=======
-    coordinate: [248, 100.0]
->>>>>>> wasp-3.8
     rotation: 0
     state: enabled
 - name: import_0
@@ -182,20 +170,12 @@ blocks:
     label: ''
     short_id: ''
     type: str
-<<<<<<< HEAD
     value: '"GRAND CENTRAL\x0a\x0aHACKRF THE PLANET"'
-=======
-    value: GRAND CENTRAL\x0a\x0aHACK THE PLANET
->>>>>>> wasp-3.8
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-<<<<<<< HEAD
     coordinate: [880, 4]
-=======
-    coordinate: [248, 172.0]
->>>>>>> wasp-3.8
     rotation: 0
     state: enabled
 - name: mixalot_pocencode_0
@@ -203,20 +183,12 @@ blocks:
   parameters:
     affinity: ''
     alias: ''
-<<<<<<< HEAD
     baudrate: '2400'
-=======
-    baudrate: '1200'
->>>>>>> wasp-3.8
     capcode: capcode
     comment: ''
     maxoutbuf: '0'
     minoutbuf: '0'
-<<<<<<< HEAD
     msg: '31338'
-=======
-    msg: message
->>>>>>> wasp-3.8
     symrate: symrate
     type: '1'
   states:
@@ -244,11 +216,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-<<<<<<< HEAD
     coordinate: [598, 101]
-=======
-    coordinate: [624, 148.0]
->>>>>>> wasp-3.8
     rotation: 0
     state: enabled
 - name: uhd_usrp_sink_0
@@ -524,11 +492,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-<<<<<<< HEAD
     coordinate: [881, 314]
-=======
-    coordinate: [840, 300.0]
->>>>>>> wasp-3.8
     rotation: 0
     state: enabled
 
