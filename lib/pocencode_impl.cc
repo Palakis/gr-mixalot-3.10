@@ -13,12 +13,12 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
+#include <memory>
 #include "utils.h"
 
 using namespace itpp;
 using std::string;
-using boost::shared_ptr;
-
+using std::shared_ptr;
 
 namespace gr {
     namespace mixalot {

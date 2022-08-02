@@ -9,8 +9,9 @@
 #include <iostream>
 #include <sstream>
 #include <vector>
+#include <memory>
 
-using boost::shared_ptr;
+using std::shared_ptr;
 using itpp::bvec;
 namespace gr {
     namespace mixalot {

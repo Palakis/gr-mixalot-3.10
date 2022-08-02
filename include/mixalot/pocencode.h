@@ -7,6 +7,7 @@
 #ifndef INCLUDED_MIXALOT_POCENCODE_H
 #define INCLUDED_MIXALOT_POCENCODE_H
 
+#include <memory>
 #include <mixalot/api.h>
 #include <gnuradio/sync_block.h>
 
@@ -21,7 +22,7 @@ namespace gr {
     class MIXALOT_API pocencode : virtual public gr::sync_block
     {
     public:
-       typedef boost::shared_ptr<pocencode> sptr;
+       typedef std::shared_ptr<pocencode> sptr;
        typedef enum { Numeric = 0, Alpha = 1 } msgtype_t;
 
       /*!

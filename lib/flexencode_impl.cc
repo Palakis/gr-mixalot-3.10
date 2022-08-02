@@ -14,6 +14,7 @@
 #include <boost/algorithm/string/classification.hpp>
 #include <boost/algorithm/string/trim.hpp>
 
+#include <memory>
 #include <iostream>
 #include <sstream>
 #include "utils.h"
@@ -21,8 +22,7 @@
 using namespace itpp;
 using std::string;
 using std::vector;
-using boost::shared_ptr;
-
+using std::shared_ptr;
 
 namespace gr {
     namespace mixalot {

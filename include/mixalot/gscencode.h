@@ -7,6 +7,7 @@
 #ifndef INCLUDED_MIXALOT_GSCENCODE_H
 #define INCLUDED_MIXALOT_GSCENCODE_H
 
+#include <memory>
 #include <mixalot/api.h>
 #ifdef GR_OLD
 #include <gr_sync_block.h>
@@ -25,7 +26,7 @@ namespace gr {
 #endif
     {
     public:
-       typedef boost::shared_ptr<gscencode> sptr;
+       typedef std::shared_ptr<gscencode> sptr;
        typedef enum { Numeric = 0, Alpha = 1 } msgtype_t;
 
        static sptr make(msgtype_t type=Numeric, unsigned int capcode = 0, std::string message="", unsigned long symrate = 38400);

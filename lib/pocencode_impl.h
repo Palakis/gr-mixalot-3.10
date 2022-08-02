@@ -8,13 +8,13 @@
 #define INCLUDED_MIXALOT_POCENCODE_IMPL_H
 
 #include <mixalot/pocencode.h>
+#include <memory>
 #include <queue>
 #include <itpp/comm/bch.h>
 
 using namespace itpp;
 using std::string;
-using boost::shared_ptr;
-
+using std::shared_ptr;
 
 namespace gr {
   namespace mixalot {

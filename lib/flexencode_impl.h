@@ -8,6 +8,7 @@
 #define INCLUDED_MIXALOT_FLEXENCODE_IMPL_H
 
 #include <mixalot/flexencode.h>
+#include <memory>
 #include <queue>
 #include <vector>
 #include <itpp/comm/bch.h>
@@ -15,8 +16,7 @@
 using namespace itpp;
 using std::string;
 using std::vector;
-using boost::shared_ptr;
-
+using std::shared_ptr;
 
 namespace gr {
   namespace mixalot {
