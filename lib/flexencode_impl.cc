@@ -17,6 +17,7 @@
 #include <memory>
 #include <iostream>
 #include <sstream>
+#include <functional>
 #include "utils.h"
 
 using namespace itpp;
@@ -678,7 +679,7 @@ namespace gr {
             message_port_register_out(pmt::mp("cmds_out"));
             message_port_register_in(pmt::mp("beeps"));
             set_msg_handler(pmt::mp("beeps"),
-                boost::bind(&flexencode_impl::beeps_message, this, _1)
+                std::bind(&flexencode_impl::beeps_message, this, std::placeholders::_1)
             );
         }
         void
