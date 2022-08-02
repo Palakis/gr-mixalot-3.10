@@ -22,8 +22,15 @@ void bind_pocencode(py::module& m)
     using pocencode = gr::mixalot::pocencode;
 
     py::class_<pocencode, gr::sync_block, gr::block, gr::basic_block,
-        std::shared_ptr<pocencode>>(m, "pocencode", D(pocencode))
-        .def(py::init(&pocencode::make),
-           D(pocencode,make)
-        );
+        std::shared_ptr<pocencode>> pocencode_class(m, "pocencode", D(pocencode));
+
+    pocencode_class.def(
+        py::init(&pocencode::make),
+        D(pocencode,make)
+    );
+
+    py::enum_<pocencode::msgtype_t>(pocencode_class, "msgtype")
+        .value("Numeric", pocencode::msgtype_t::Numeric)
+        .value("Alpha", pocencode::msgtype_t::Alpha)
+        .export_values();
 }

@@ -8,7 +8,7 @@ parameters:
 -   id: type
     label: Message Type
     dtype: enum
-    options: ['0', '1']
+    options: ['mixalot.pocencode.msgtype.Numeric', 'mixalot.pocencode.msgtype.Alpha']
     option_labels: [Numeric, Alphanumeric]
 -   id: baudrate
     label: Baud Rate
